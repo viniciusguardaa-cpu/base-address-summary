@@ -1,0 +1,17 @@
+{
+  "name": "base-address-summary",
+  "description": "Fast, cheap wallet triage for Base addresses (ETH/USDC balance, nonce, contract flag, code size).",
+  "version": "1.0.0",
+  "price_usdc": 0.001,
+  "pay_to": "0x65aa59025C4AcD8CD7ba2051ecb9152abaE4fcC6",
+  "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+  "chain": "base-mainnet",
+  "endpoints": [
+    {"path": "/health", "method": "GET", "price": 0, "description": "Health check"},
+    {"path": "/summary", "method": "GET", "price": 0.001, "description": "Address summary via query param"},
+    {"path": "/summary", "method": "POST", "price": 0.001, "description": "Address summary via JSON body"}
+  ],
+  "status": "running",
+  "port": 8810,
+  "source": "https://github.com/viniciusguardaa-cpu/base-address-summary"
+}
